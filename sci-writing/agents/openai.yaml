@@ -1,0 +1,15 @@
+interface:
+  display_name: SCI Writing — Control Research
+  short_description: Read, validate and write control research with evidence
+  default_prompt: Use $sci-writing to help with this control research task, select
+    the relevant workflow, and distinguish established results from open evidence
+    gaps.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

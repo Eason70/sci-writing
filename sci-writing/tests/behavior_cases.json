@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Manual forward checks of task routing and claim discipline; not a claim of exhaustive control-domain validation.",
+  "cases": [
+    {
+      "id": "stability-and-mpc",
+      "task": "审查两个论证：A dx1/dt=-x1, dx2/dt=0，V=(x1²+x2²)/2，dV/dt=-x1²≤0，因此原点全局渐近稳定。B x(k+1)=2x(k)+u(k)，|x|≤1，|u|≤0.5，一步 MPC 最小化 u²，仅约束当前和下一状态；x(0)=0.6 时可行，因此递归可行。给出可用于修改的结论，不创建项目。",
+      "checks": [
+        "A identifies stability without attraction and gives a nonzero invariant trajectory.",
+        "B computes u*(0)=-0.2, x(1)=1 and next-step infeasibility.",
+        "Does not make terminal ingredients universally mandatory.",
+        "Returns bounded corrected claims without scaffolding."
+      ]
+    },
+    {
+      "id": "bounded-paragraph-revision",
+      "task": "仅润色这一段，不检索或创建项目。目前无实验，推导仅适用于无噪声且可观测的线性系统：Our observer guarantees exact state reconstruction for all nonlinear systems under arbitrary noise. Extensive simulations show its superiority over all existing methods. The algorithm uses the available output measurements. 给草稿英文和中文证据缺口。",
+      "checks": [
+        "Limits scope to noise-free observable linear systems.",
+        "Removes nonexistent experimental superiority and labels empirical evaluation pending.",
+        "Does not assert exactness or convergence mode without proof.",
+        "Does not trigger directions, project creation or unnecessary search."
+      ]
+    }
+  ]
+}
